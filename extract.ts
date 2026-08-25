@@ -239,6 +239,8 @@ export interface ExtractOptions {
 	mode?: "readable" | "raw" | "answer";
 	answerModel?: string;
 	authFetchProfile?: AuthFetchProfile;
+	/** Optional http(s) proxy URL; routed through the curl-backed transport. */
+	proxy?: string;
 	/** Custom DNS resolver used for SSRF validation. Primarily a test seam. */
 	lookup?: Lookup;
 }
